@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 class ChatController {
+
     private final ChatClient chatClient;
     
     public ChatController(ChatClient.Builder builder) {
@@ -15,6 +16,9 @@ class ChatController {
 
 	@GetMapping("/ai")
 	 String generation(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
-		return chatClient.call(message);
+		return chatClient.prompt()
+						.user(message)
+						.call()
+						.content();
 	}
 }
