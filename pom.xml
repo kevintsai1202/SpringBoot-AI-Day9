@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>SpringBoot-AI-1</artifactId>
+	<artifactId>SpringBoot-AI-1-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBoot-DockerCompose-1</name>
+	<name>SpringBoot-AI-1-1</name>
 	<description>Demo project for Spring Boot AI</description>
 	<url/>
 	<licenses>
@@ -32,8 +32,8 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.ai</groupId>
-			<artifactId>spring-ai-openai-spring-boot-starter</artifactId>
+		    <groupId>org.springframework.ai</groupId>
+		    <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

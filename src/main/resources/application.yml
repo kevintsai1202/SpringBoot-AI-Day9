@@ -1,10 +1,14 @@
 spring:
-  application:
-    name: SpringBoot-AI-1
   ai:
     openai:
-      api-key: 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      
-      base-url: https://api.groq.com/openai
-      chat:
-        options:
-          model: llama3-70b-8192
+      api-key: ${OPENAI_APIKEY}
+      audio:
+        transcription:
+          options:
+            model: whisper-1         
+  servlet:
+    multipart:
+      max-file-size:
+        25MB
+      max-request-size:
+        25MB    
